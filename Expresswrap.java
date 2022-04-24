@@ -1,6 +1,6 @@
  class Express{
     
-         public static Void  main (String args[]) {
+         public static void  main (String args[]) {
              //Declaration and Initialization
              int a = 10, b = 5, c = 8, d = 2;
              float x = 6.4f, y = 3.0f;
