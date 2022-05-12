@@ -1,0 +1,155 @@
+import java.util.*;
+
+ class Decoder
+ {
+   public static void main(String args[])
+   { 
+     System.out.print("Enter a number 3-8:");
+     Scanner sc = new Scanner(System.in);
+     int n = sc.nextInt();
+     int z = 1;
+     int f = 0;
+     int g = 0;
+     int f1 = n*7-3;
+     int g1 = 0;
+  
+       for(int i=1;i<n*4-2;i++){
+         System.out.print(" ");
+       }
+       for(int j=1;j<2;j++){
+         System.out.print("*\n");
+       }
+       for(int i=n;i>0;i--){
+         for(int x=1;x<n*2;x++){
+           System.out.print(" ");
+         }
+         for(int y=i;y>0;y--){
+           System.out.print(" ");
+         }
+         for(int j=1;j<2;j++){
+           System.out.print("*");
+         }
+         for(int k=1;k<z*2+3;k++){
+           System.out.print(" "); 
+         }
+         for(int l=1;l<2;l++){
+           System.out.print("*");
+         }
+         z++;
+         System.out.println("");
+       }
+     
+     for(int i=1;i<=n;i++){
+       if(i<n){
+         continue;
+       }
+       if(i==n){
+       for(int k=1;k<=n;k++){
+         System.out.print("*");
+        }
+       for(int l=1;l<=n*3;l++){
+         System.out.print(" ");
+        }
+       for(int m=1;m<=n;m++){
+         System.out.print("*"); 
+        }
+       }
+       System.out.println(""); 
+     }
+
+
+   
+     for(int a=1;a<=n;a++){
+       for(int b=1;b<a;b++){
+         System.out.print("  ");
+       }
+       for(int c=1;c<2;c++){
+         System.out.print("*");
+       }
+       for(int d=1;d<=f1;d++){
+         System.out.print(" ");
+       }
+       for(int e=1;e<2;e++){
+         System.out.print("*");
+       }
+       f1-=4;
+       
+       System.out.println("");
+      }
+    
+     for(int i=n;i>0;i--){
+       for(int j=i;j>0;j--){
+         System.out.print("  ");
+       }
+       for(int k=1;k<2;k++){
+         System.out.print("*");
+       }
+       for(int l=i-1;l>0;l--){
+         System.out.print(" ");
+       }
+       for(int m=1;m<2;m++){
+         System.out.print("*");
+       }
+       for(int o=1;o<=f*7-g;o++){
+         System.out.print(" ");
+       }
+       for(int p=1;p<2;p++){
+         System.out.print("*");
+       }
+       for(int q=i;q>0;q--){
+         System.out.print(" ");
+       }
+       for(int r=1;r<2;r++){
+         System.out.print("*");
+       }
+       f+=1;
+       g++;
+       System.out.println("");
+     }
+     for(int i=1;i<10;i++){
+       System.out.println("");
+     }
+     
+     
+     
+     
+     for(int i=1;i<=4;i++){
+      for(int j=1;j<70;j++){
+        System.out.print(" ");
+      }
+      if(i==1){
+        for(int l=1;l<=8;l++){
+          System.out.print(" "); 
+        }
+        System.out.println("( )");
+        for(int m=1;m<78;m++){
+        System.out.print(" ");
+        }
+        System.out.print("-|-"); 
+      }
+      if(i==2){
+       for(int k=1;k<=10;k++){
+         System.out.print("*");
+       }
+      }
+      if(i==3){
+        System.out.print("*");
+        for(int l=1;l<=8*2;l++){
+          System.out.print(" "); 
+        }
+        System.out.print("*"); 
+      }
+      if(i==4){
+        System.out.print("*");
+        for(int m=1;m<=8*2;m++){
+          System.out.print(" "); 
+        }
+        System.out.print("*"); 
+      }
+      System.out.println("");
+     }
+     for(int k=1;k<50;k++){
+       System.out.print("*");
+     }
+   }
+ }
